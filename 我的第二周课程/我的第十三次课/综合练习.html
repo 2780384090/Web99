@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合练习</title>
+    <style>
+
+        body {
+            background-color: chartreuse;
+        }
+
+        .main {
+            background-color: rgb(248, 231, 72);
+            height: 603px;
+            width: 70%;
+            position:relative;
+            margin:0 auto;
+            margin-top:40px; 
+        }
+
+        .tabLeft {
+            background-color: red;
+            width: 30%;
+            height: 90%;
+            position: absolute;
+            top: 5%;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        [class~="menu"]{
+            background-color: blue;
+            margin:30px 5px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border:1px solid white;
+        }
+        .tabLeft div:first-child {
+            background-color: rgb(240, 33, 119);
+            margin-top: 30px;
+        }
+        .tabContent{
+            background-color: rgb(212, 85, 212);
+            width: 70%;
+            height:100%;
+            float:right;
+            overflow: hidden;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            text-align: center;
+        }
+        a:active {
+            background-color: royalblue;
+        }
+        .home{
+            background-color: rgb(178, 219, 226);
+            height:100%;
+            display: none;
+        }
+        .home img{
+            width:450px;
+            height:200px;
+            margin:auto;
+            position: absolute;
+            top:340px;
+            left:300px;
+            bottom:0;
+            right:0;
+            margin-top: 20px;
+        }
+        .home p{
+            text-indent: 2em;
+        }
+        .tabCntent P:first-child{
+            margin-top: 0px;
+        }
+        .opera{
+            display: none;
+            background-color: rgb(106, 127, 155);
+            position: relative;
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        
+        .opera img{
+            width:400px;
+            height:250px;
+            margin:auto;
+            position: absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            margin-top: 20px;
+        }
+        .opera p{
+            position: relative;
+            bottom:-50%;
+            text-indent: 2em;
+        }
+        .tabContent div:target{
+            display: block;
+        }
+        .paofen p{
+            text-indent: 2em;
+        }
+        .paofen img{
+            width:400px;
+            height:250px;
+            margin:auto;
+            position: relative;
+            top:0;
+            left:120px;
+            bottom:0;
+            right:0;
+            margin-top: 20px;
+        }
+        .caigeng img{
+            width:450px;
+            height:300px;
+            margin:auto;
+            position: relative;
+            top:0;
+            left:100px;
+            bottom:0;
+            right:0;
+            margin-top: 20px;
+        }
+        .caigeng,
+        .talent{
+            display: none;
+            position: relative;
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        .caigeng{
+            background-color: rgb(214, 168, 195);
+        }
+        .talent{
+            background-color: rgb(75, 212, 171);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="tabLeft">
+            <div title="index" class="menu" id="menu1">
+                <a href="#home" class="">抚州文化概要</a>
+            </div>
+            <div class="menu" id="menu2">
+                <a href="#opera" class="">抚州戏曲</a>
+            </div>
+            <div class="menu" id="menu3">
+                <a href="#paofen" class="">抚州泡粉</a>
+            </div>
+            <div class="menu" id="menu4">
+                <a href="#caigeng" class="">临川菜梗</a>
+            </div>
+            <div class="menu" id="menu5">
+                <a href="#talent" class="">才子之乡---临川</a>
+            </div>
+        </div>
+        <div class="tabContent">
+            <div id="home" class="home">
+                <p>
+                    抚州是江右古郡，孕育出王安石、汤显祖、曾巩等名人。抚州是国务院确定的海峡西岸经济区20个城市之一，是江西省第一个纳入国家战略区域性发展规划的鄱阳湖生态经济区以及原中央苏区重要城市之一。 [2]  抚州自古就有“襟领江湖，控带闽粤”之称。抚州是国家园林城市，人均公园绿化面积达到16.6平方米，城市绿化率达到43.4%，环境综合评价居全国第七、中部第一，森林覆盖率高达64.5%，境内的资溪县森林覆盖率高达85.9%，被誉为“天然大氧吧”。
+                </p>
+                <p>
+                    抚州是革命文化重要的地方，随着井冈山根据地建立，早期我党在抚州各个地方开展斗争，可以说是“星星之火，可以燎原”，为中国的革命输送优秀儿女。 
+                </p>
+                <p>
+                    说起抚州，大家都很熟悉，自古以来，抚州临川更是“文化之乡，才子之乡”的美誉。抚州培育了思想史上有改革家和政治家王安石；有“心学”之祖的陆象山；有为中华文化进军的晏殊、陈彭年；有戏剧作家的汤显祖；有为祖国革命牺牲赵醒侬、傅烈等，这是抚州文化杰出人物，是时代座标，我们发扬和传承高他们的精神，书写他们的故事 
+                </p>
+                <p> 
+                    抚州旅游资源丰富有王安石纪念馆、汤显祖纪念馆、麻姑山、大觉溪流等，美丽自然人文景观，带你品读不一样吧抚州，看不一样的风土人情 
+                </p>
+                <img src="D:\web\Web99\我的第二周课程\img\抚州文化.jpg" width="100px" height="200px">
+            </div>
+            <div id="opera" class="opera">
+                <img src="D:\web\Web99\我的第二周课程\img\抚州戏曲.jpg">
+                <p>
+                    初期的抚州“三脚班”仅有一旦一丑， 外加一个“坐堂”(锣鼓手)，演唱单台戏和小戏。至康熙、乾隆年间，才增加了小生行当。清末民初，“三脚班”开始向“半班”过渡，人员由三个增至七、八个，并增加了花脸老生行当，生旦净末丑齐全，伴奏乐器也增加了二胡、三弦、笛子、唢呐等。1934年，崇仁县航埠采茶戏著名艺人张佑民组建抚州采茶戏的第一个职业半班“佑民堂”。尔后，职业半班相继成立。一些抚州傀儡戏的部分老艺人，也加入“半班”演出，并将本剧种的大量剧目、伴奏曲牌和一些唱腔带进了采茶戏。抗战胜利后，丰城、高安的丝弦班进入抚州，同抚州“半班”艺人汇合，又给采茶戏带来了“本调”、“小花调”等新腔，与本地单台调、会田调相结合，分别发展为抚州“本调”和“抚调”。
+                </p>
+                
+            </div>
+            <div id="paofen" class="paofen">
+                <p>
+                    抚州泡粉是江西抚州传统的知名小吃。具有久煮不糊、久炒不烂的特点。主要以优质大米为原料，经过浸泡大米、石磨磨米、布袋过滤压浆、揉粉成球团、锅内煮熟、石臼打烂、搓成长团放入铁制粉筒压榨，通过铁底板小孔压出粉丝、成形于塘锅中煮沸捞起、再放入冷水缸内冷却、最后捞起待用等多道工序，从外表看上去非常洁白细嫩，尤其是刚煮好以后从汤水中捞出来，感觉就像白玉一样。吃法有很多种，可做成炒粉、煮粉、泡粉、拌粉等，通常会采用熬制了四五个小时的大骨汤或鸭汤做为汤料，再加上一道抚州的特色辅助小菜：牛杂（或猪杂），味道极其鲜美。
+                </p>
+                <img src="D:\web\Web99\我的第二周课程\img\抚州泡粉.gif">
+            </div>
+            <div id="caigeng" class="caigeng">
+                <p>
+                    临川芥菜梗是江西临川的传统民间特产临川菜梗品种之一，它以“不怕辣”而著称，以芥菜梗与萝卜梗为主要原料并配 以辣椒、大蒜等辛辣佐料腌制而成，风味独特，以辣为主，五味兼 备，可备蔬菜淡季佐餐所 需，也是平常解荤除腥开胃的最好小菜，深受当地人民喜爱。
+                </p>
+                <img src="D:\web\Web99\我的第二周课程\img\菜梗.png"/>
+            </div>
+            <div id="talent" class="talent">
+                <p>
+                    唐初四杰之一王勃就发出了 “邺水朱华，光照临川之笔”的吟诵。流传千古的《全唐诗》中，临川诗人的作品被收入。实行科考制度后，自宋至清，临川人在科举考试中共录取举人1029人，进士731人。著书立传的学者有300多人，著述481种，5580多卷，其中65种770多卷被列入《四库全书》
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
