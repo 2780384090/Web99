@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>换肤自制</title>
+    <style>
+        #box{
+            width:400px;
+            height:400px;
+            background-color: darkorange;
+            border:2px rgb(46, 56, 56) solid;
+            
+        }
+        #box1{
+            width:40px;
+            height:40px;
+            background-color: chartreuse;
+            border:2px rgb(46, 56, 56) solid;
+            position: absolute;
+            top:20px;
+            left:180px;
+        }
+        #box2{
+            width:40px;
+            height:40px;
+            background-color: cornflowerblue;
+            border:2px rgb(46, 56, 56) solid;
+            position: absolute;
+            top:20px;
+            left:240px;
+        }
+        #box3{
+            width:40px;
+            height:40px;
+            background-color: rgb(228, 243, 95);
+            border:2px rgb(46, 56, 56) solid;
+            position: absolute;
+            top:20px;
+            left:300px;
+        }
+        #box4{
+            width:40px;
+            height:40px;
+            background-color: rgb(102, 221, 230);
+            border:2px rgb(46, 56, 56) solid;
+            position: absolute;
+            top:20px;
+            left:360px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">换肤请点击！
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+    </div>
+    <script>
+        var box=document.getElementById("box");
+        var box1=document.getElementById("box1");
+        var box2=document.getElementById("box2");
+        var box3=document.getElementById("box3");
+        var box4=document.getElementById("box4");
+        box1.onclick = function(){
+            box.style.backgroundColor = 'chartreuse';
+        }
+        box2.onclick = function(){
+            box.style.backgroundColor = ' cornflowerblue';
+        }
+        box3.onclick = function(){
+            box.style.backgroundColor = '  rgb(228, 243, 95)';
+        }
+        box4.onclick = function(){
+            box.style.backgroundColor = '  rgb(102, 221, 230)';
+        }
+        var change = function(){
+            var target = document.getElementById("box")
+        }
+        setTimeout(change,2000)
+    </script>
+</body>
+</html>
